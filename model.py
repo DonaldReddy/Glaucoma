@@ -190,6 +190,8 @@ for model_name, classifier in models.items():
     recall = true_positive / (true_positive + false_negative)
     f1_score = 2 * (precision * recall) / (precision + recall)
 
+    print(model_name)
+
     # Store model results
     results.append({
         "Model name": model_name,
