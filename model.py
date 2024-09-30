@@ -101,7 +101,6 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 # Generate confusion matrix and plot heatmap
 cm = confusion_matrix(y_predictions, y_test)
-cm
 
 sns.heatmap(cm, annot=True)
 plt.xlabel("Prediction")
@@ -141,6 +140,8 @@ predict_and_plot(path)
 def new_func():
     path = r'./train/class1/BEH-68.png'
     predict_and_plot(path)
+
+new_func()
 
 # Importing various classification models
 from sklearn.svm import SVC
